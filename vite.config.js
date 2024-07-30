@@ -1,10 +1,7 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    hmr: true, // Enable HMR
-  },
+  root: '.',  // Make sure Vite uses the correct root directory
 });
