@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
- // Assuming you have CSS for the styles
+// Assuming you have CSS for the styles
 
 function MyCourse() {
   const [activeTab, setActiveTab] = useState('in_progress');
@@ -31,7 +31,7 @@ function MyCourse() {
       <div className={`my_progess_first_cards_holder slideTabContent flex flex-wrap justify-between ${activeTab === 'in_progress' ? '' : 'hidden'}`} id="in_progress">
         <div className="my_progess_first_card bg-white flex flex-col justify-around rounded-lg shadow-xl my-5 mr-2.5 h-[220px] w-[32%] max-[900px]:w-full">
           <div className="my_progess_first_card_header flex items-center p-4">
-            <img src="assets/python_logo.png" alt="course-logo" className="w-7 h-7 mr-4 rounded-2xl" />
+            <img src="/src/assets/python_logo.png" alt="course-logo" className="w-7 h-7 mr-4 rounded-2xl" />
             <h1 className="text-base font-bold">Introduction to Python</h1>
           </div>
           <div className="my_progess_first_card_body p-4">

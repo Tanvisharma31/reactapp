@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TrendingProjects from './mini-components/TrendingProject.jsx';
+import { Link } from 'react-router-dom';
 
 const projectCards = [
   {
@@ -57,7 +58,7 @@ const Projects = () => {
               </div>
             </div>
             <div className="py-8 w-[40%] max-[900px]:w-[70%]">
-              <img src="assets/banner_img.svg" alt="banner_pic" className="h-auto p-6" />
+              <img src="/src/assets/banner_img.svg" alt="banner_pic" className="h-auto p-6" />
             </div>
           </div>
         </div>
@@ -65,7 +66,7 @@ const Projects = () => {
           <div className="title relative text-2xl mt-12 mb-4 font-bold">
             <h1>Popular Projects</h1>
           </div>
-          <TrendingProjects/>
+          <TrendingProjects />
         </div>
         <div className="courses_section px-4">
           <div className="title flex justify-between items-center text-xl">
@@ -83,14 +84,14 @@ const Projects = () => {
                   value={searchTerm}
                   onChange={handleSearchChange}
                 />
-                <a href="#">
+                <Link>
                   <img src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" className="search-icon w-10 h-10" alt="search icon" />
-                </a>
+                </Link>
               </form>
             </div>
           </div>
           <div className="coures_card_section flex flex-wrap justify-between">
-           <TrendingProjects/>
+            <TrendingProjects />
           </div>
         </div>
       </section>

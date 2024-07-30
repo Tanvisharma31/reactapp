@@ -18,7 +18,7 @@ const YourBuddy = () => {
           <div className="flex flex-col justify-between h-[170px] border-2 shadow-xl border-black rounded-lg p-4">
             <h2 className="flex items-center mb-2 text-[#7933ff] text-lg">
               <span>
-                <img src="assets/enrolled.svg" alt="enroll" className="h-4 w-4 mr-2" />
+                <img src="/src/assets/enrolled.svg" alt="enroll" className="h-4 w-4 mr-2" />
               </span>
               Enrolled
             </h2>

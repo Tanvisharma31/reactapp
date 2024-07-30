@@ -1,5 +1,6 @@
 import React from 'react';
 import profile from '../../../../assets/profile.png';
+import { Link } from 'react-router-dom';
 
 const FeedHeader = () => {
   return (
@@ -7,11 +8,11 @@ const FeedHeader = () => {
       <div className="flex items-center mb-10">
         <img src={profile} alt="profile" className="w-12 h-12 rounded-full mr-2" />
 
-        <a className="post_bar cursor-pointer border-gray-200 border-2 solid w-full rounded-full p-2" href="/post.html">
+        <Link className="post_bar cursor-pointer border-gray-200 border-2 solid w-full rounded-full p-2" href="/post.html">
           <h1 className="text-lg font-semibold text-gray-400">
             Start A Post
           </h1>
-        </a>
+        </Link>
       </div>
       <div className="options_holder flex justify-between w-[90%] mx-auto">
         <div className="icon flex items-center cursor-pointer flex-col">

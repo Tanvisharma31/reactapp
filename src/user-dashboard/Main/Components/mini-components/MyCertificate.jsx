@@ -27,7 +27,7 @@ const Certificate = () => {
               {/* Repeat the icon structure as needed */}
               <div className="icon_item flex items-center text-xs">
                 <span>
-                  <img src="assets/card_time.svg" alt="time" className="w-5 h-5" />
+                  <img src="/src/assets/card_time.svg" alt="time" className="w-5 h-5" />
                 </span>
                 <p>{cert.time}</p>
               </div>
@@ -37,7 +37,7 @@ const Certificate = () => {
               <p className="text-gray-700 font-semibold">Author:</p>
               <div className="name flex items-center ml-2">
                 <span>
-                  <img src="assets/coin.svg" alt="coin" className="w-4 h-4" />
+                  <img src="/src/assets/coin.svg" alt="coin" className="w-4 h-4" />
                 </span>
                 <h3 className="text-gray-700 font-semibold">{cert.author}</h3>
               </div>

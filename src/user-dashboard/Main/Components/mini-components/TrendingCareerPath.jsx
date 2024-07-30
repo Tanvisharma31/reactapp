@@ -47,15 +47,15 @@ const TrendingCareerPaths = () => {
               </div>
               <div className="my_progess_trending_card_options_holder flex justify-between items-end">
                 <div className="my_progess_trending_card_option flex items-center">
-                  <img src="assets/time.svg" alt="time" className="w-5 h-5" />
+                  <img src="/src/assets/time.svg" alt="time" className="w-5 h-5" />
                   <p className="white text-sm ml-2">{career.duration}</p>
                 </div>
                 <div className="my_progess_trending_card_option flex items-center">
-                  <img src="assets/lessons.svg" alt="lessons" className="w-5 h-5" />
+                  <img src="/src/assets/lessons.svg" alt="lessons" className="w-5 h-5" />
                   <p className="white text-sm ml-2">{career.lessons}</p>
                 </div>
                 <div className="my_progess_trending_card_option flex items-center">
-                  <img src="assets/coin.svg" alt="coin" className="w-5 h-5" />
+                  <img src="/src/assets/coin.svg" alt="coin" className="w-5 h-5" />
                   <p className="white text-sm ml-2">{career.coins}</p>
                 </div>
               </div>

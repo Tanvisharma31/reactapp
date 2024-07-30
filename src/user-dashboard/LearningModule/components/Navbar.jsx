@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import SettingBar from "./Settingbar.jsx";
 import Popup from "./Popup.jsx";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -49,7 +50,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center space-x-4">
               <div className="relative">
-                <a
+                <Link
                   href="#"
                   className="text-gray-800 px-3 py-2 rounded-md text-sm font-medium relative"
                 >
@@ -79,7 +80,7 @@ const Navbar = () => {
                       fill="#0F0F0F"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="relative flex justify-between items-center">
                 <i
@@ -102,7 +103,7 @@ const Navbar = () => {
                 >
                   <div className="">
                     <img
-                      src="/../../../assets/bell.svg"
+                      src="/assets/bell.svg"
                       alt="notification"
                       className="notification_bell w-8 h-8 ml-1"
                       title="notification"
@@ -121,9 +122,9 @@ const Navbar = () => {
                           <span className="font-semibold text-gray-700">
                             Notifications
                           </span>
-                          <a href="#" className="text-blue-500 text-sm">
+                          <Link className="text-blue-500 text-sm">
                             Mark All as Read
-                          </a>
+                          </Link>
                         </div>
                         <ul className="mt-2">
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between">
@@ -145,12 +146,12 @@ const Navbar = () => {
                             </span>
                           </li>
                         </ul>
-                        <a
+                        <Link
                           href="#"
                           className="block text-center text-blue-500 py-2"
                         >
                           See All Notifications
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -169,7 +170,7 @@ const Navbar = () => {
                   className="relative profile-icon cursor-pointer py-2 px-3"
                   onClick={toggleProfile}
                 >
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-800 px-3 rounded-md text-sm font-medium"
                     id="profile-icon"
@@ -190,7 +191,7 @@ const Navbar = () => {
                         strokeLinejoin="round"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                   {isProfileOpen && (
                     <div
                       id="profile-popup"
@@ -199,7 +200,7 @@ const Navbar = () => {
                       <div className="p-4">
                         <ul className="mt-0">
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between items-center hover-blue-500 checkhover">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -216,10 +217,10 @@ const Navbar = () => {
                                 <circle cx="12" cy="7" r="4"></circle>
                               </svg>
                               <span>Profile</span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between items-center hover-blue-500">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -236,10 +237,10 @@ const Navbar = () => {
                                 <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                               </svg>
                               <span>Upgrade to Pro</span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between items-center hover-blue-500">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -253,10 +254,10 @@ const Navbar = () => {
                                 <path d=""></path>
                               </svg>
                               <span>My Playgrounds</span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between items-center hover-blue-500">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -275,10 +276,10 @@ const Navbar = () => {
                                 <circle cx="12" cy="7" r="4"></circle>
                               </svg>
                               <span>My Account</span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="px-4 py-2 border-b border-gray-200 flex justify-between items-center hover-blue-500">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -296,10 +297,10 @@ const Navbar = () => {
                                 <circle cx="12" cy="4" r="2"></circle>
                               </svg>
                               <span>New playground</span>
-                            </a>
+                            </Link>
                           </li>
                           <li className="px-4 py-2 flex justify-between items-center hover-blue-500">
-                            <a href="#" className="flex items-center">
+                            <Link className="flex items-center">
                               <svg
                                 stroke="currentColor"
                                 className="w-5 h-5 mr-2"
@@ -325,15 +326,15 @@ const Navbar = () => {
                                 ></rect>
                               </svg>
                               <span>Import playground</span>
-                            </a>
+                            </Link>
                           </li>
                         </ul>
-                        <a
+                        <Link
                           href="#"
                           className="block text-center text-blue-500 py-2"
                         >
                           Sign Out
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   )}

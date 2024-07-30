@@ -19,7 +19,7 @@ import MyProfile from "./Components/MyProfile";
 import EditProfile from "./Components/EditProfile";
 import AccountSetting from "./Components/AccountSetting";
 
-function Main() {
+function Dashboard() {
   const [currentSection, setCurrentSection] = useState(<MyProgressSection />);
 
   return (
@@ -31,7 +31,7 @@ function Main() {
         <div className="sub_header relative mx-auto flex justify-between items-center max-[900px]:min-h-[45px]">
           <div className="Header_icon flex items-center">
             <img
-              src="assets/icon.svg"
+              src="/src/assets/icon.svg"
               alt="Logo"
               className="w-32 h-12 object-contain"
             />
@@ -54,7 +54,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/self-growth3.png"
+                src="/src/assets/self-growth3.png"
                 alt="progress"
                 className="w-4 h-4"
               />
@@ -68,7 +68,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/self-growth3.png"
+                src="/src/assets/self-growth3.png"
                 alt="feed"
                 className="w-4 h-4"
               />
@@ -82,7 +82,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/self-growth3.png"
+                src="/src/assets/self-growth3.png"
                 alt="topics"
                 className="w-4 h-4"
               />
@@ -96,7 +96,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/stage.png"
+                src="/src/assets/stage.png"
                 alt="competitions"
                 className="w-4 h-4"
               />
@@ -110,7 +110,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/leaderboard.png"
+                src="/src/assets/leaderboard.png"
                 alt="leaderboard"
                 className="w-4 h-4"
               />
@@ -135,7 +135,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/career-choice.png"
+                src="/src/assets/career-choice.png"
                 alt="career"
                 className="w-4 h-4"
               />
@@ -149,7 +149,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/online-course2.png"
+                src="/src/assets/online-course2.png"
                 alt="courses"
                 className="w-4 h-4"
               />
@@ -163,7 +163,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/project-management (2).png"
+                src="/src/assets/project-management (2).png"
                 alt="projects"
                 className="w-4 h-4"
               />
@@ -176,7 +176,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/learnmodules.png"
+                src="/src/assets/learnmodules.png"
                 alt="learnmodules"
                 className="w-4 h-4"
               />
@@ -190,7 +190,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/clipboard.png"
+                src="/src/assets/clipboard.png"
                 alt="assessment"
                 className="w-4 h-4"
               />
@@ -204,7 +204,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/deadline.png"
+                src="/src/assets/deadline.png"
                 alt="live events"
                 className="w-4 h-4"
               />
@@ -229,7 +229,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/account (1).png"
+                src="/src/assets/account (1).png"
                 alt="my profile"
                 className="w-4 h-4"
               />
@@ -243,7 +243,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/edit (1).png"
+                src="/src/assets/edit (1).png"
                 alt="edit profile"
                 className="w-4 h-4"
               />
@@ -257,7 +257,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/user (1).png"
+                src="/src/assets/user (1).png"
                 alt="account settings"
                 className="w-4 h-4"
               />
@@ -270,7 +270,7 @@ function Main() {
               className="flex h-10 text-white text-[14px] w-full justify-center items-center hover:text-gray-400 transition-colors duration-300"
             >
               <img
-                src="assets/logout (1).png"
+                src="/src/assets/logout (1).png"
                 alt="logout"
                 className="w-4 h-4"
               />
@@ -286,9 +286,9 @@ function Main() {
         {currentSection}
       </div>
       <BottomBar setCurrentSection={setCurrentSection} />
-      
+
     </div>
   );
 }
 
-export default Main;
+export default Dashboard;

@@ -4,6 +4,7 @@ import "alertifyjs/build/css/themes/default.min.css";
 import alertify from "alertifyjs";
 import "./LoginPage.css"; // Create this CSS file for custom styles
 import logo from "../assets/logo-black.png";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const [isRegister, setIsRegister] = useState(false);
@@ -120,7 +121,7 @@ const LoginPage = () => {
                         By continuing, you accept our Terms of Use, our Privacy Policy. You confirm you are at least 16 years old (13 if you are an authorized Classrooms user).
                       </p>
                       <p className="switch-text">
-                        Already have an account? <a href="#" onClick={handleSwitch}>Login Here</a>
+                        Already have an account? <Link onClick={handleSwitch}>Login Here</Link>
                       </p>
                     </form>
                   </>
@@ -156,11 +157,11 @@ const LoginPage = () => {
                         <button className="button" name="login_page" id="loginBtn" type="submit" onClick={handleAlert} disabled={isSubmitting}>Login</button>
                       <br />
                       <label>
-                        <a id="forget_pass" href="/password-reset">Forgot your password?</a>
+                        <Link id="forget_pass" href="/password-reset">Forgot your password?</Link>
                       </label>
                       <br />
                       <p className="switch-text">
-                        Don&apos;t have an account? <a href="#" onClick={handleSwitch}>Register Here</a>
+                        Don&apos;t have an account? <Link href="#" onClick={handleSwitch}>Register Here</Link>
                       </p>
                     </form>
                   </>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [openChapters, setOpenChapters] = useState({});
@@ -33,11 +34,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="ml-4">
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">Topic 1.1</a>
+                    <Link className="text-gray-700">Topic 1.1</Link>
                   </li>
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">Topic 1.2</a>
+                    <Link className="text-gray-700">Topic 1.2</Link>
                   </li>
                 </ul>
               )}
@@ -56,15 +57,15 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="ml-4">
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">SQL SELECT</a>
+                    <Link className="text-gray-700">SQL SELECT</Link>
                   </li>
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">SELECT WHERE</a>
+                    <Link className="text-gray-700">SELECT WHERE</Link>
                   </li>
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">AND, OR and NOT</a>
+                    <Link className="text-gray-700">AND, OR and NOT</Link>
                   </li>
                 </ul>
               )}
@@ -83,11 +84,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <ul className="ml-4">
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">Topic 3.1</a>
+                    <Link className="text-gray-700">Topic 3.1</Link>
                   </li>
                   <li className="mb-2 pl-4 flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <a href="#" className="text-gray-700">Topic 3.2</a>
+                    <Link className="text-gray-700">Topic 3.2</Link>
                   </li>
                 </ul>
               )}

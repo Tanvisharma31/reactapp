@@ -44,7 +44,7 @@ const Assessment = () => {
               </div>
             </div>
             <div className="py-8 w-[40%] max-[900px]:w-[70%]">
-              <img src="assets/banner_img.svg" alt="banner_pic" className="h-auto p-6" />
+              <img src="/src/assets/banner_img.svg" alt="banner_pic" className="h-auto p-6" />
             </div>
           </div>
         </div>
@@ -63,15 +63,15 @@ const Assessment = () => {
               </div>
               <div className="flex items-center mb-4 space-x-3">
                 <div className="flex items-center">
-                  <img src="assets/time.svg" alt="time" className="w-4 h-4 m-1" />
+                  <img src="/src/assets/time.svg" alt="time" className="w-4 h-4 m-1" />
                   <p>{cardData.duration}</p>
                 </div>
                 <div className="flex items-center">
-                  <img src="assets/lessons.svg" alt="lessons" className="w-4 h-4 m-1" />
+                  <img src="/src/assets/lessons.svg" alt="lessons" className="w-4 h-4 m-1" />
                   <p>{cardData.lessons}</p>
                 </div>
                 <div className="flex items-center">
-                  <img src="assets/coin.svg" alt="coins" className="w-4 h-4 m-1" />
+                  <img src="/src/assets/coin.svg" alt="coins" className="w-4 h-4 m-1" />
                   <p>{cardData.coins}</p>
                 </div>
               </div>

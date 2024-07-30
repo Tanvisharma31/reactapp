@@ -17,15 +17,15 @@ const MyProfile = () => {
       languages: ["Kannada"],
     },
     menuItems: [
-      { id: "Personal", text: "Personal Information", icon: "assets/bell.svg" },
+      { id: "Personal", text: "Personal Information", icon: "/src/assets/bell.svg" },
       {
         id: "Education",
         text: "Education and Experience",
-        icon: "assets/bell.svg",
+        icon: "/src/assets/bell.svg",
       },
-      { id: "Blogs", text: "Blogs", icon: "assets/bell.svg" },
-      { id: "Teammates", text: "Teammates", icon: "assets/bell.svg" },
-      { id: "Posts", text: "Posts", icon: "assets/bell.svg" },
+      { id: "Blogs", text: "Blogs", icon: "/src/assets/bell.svg" },
+      { id: "Teammates", text: "Teammates", icon: "/src/assets/bell.svg" },
+      { id: "Posts", text: "Posts", icon: "/src/assets/bell.svg" },
     ],
     blogs: [
       {
@@ -50,7 +50,7 @@ const MyProfile = () => {
         role: "TechSnap DevOps",
         content:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti reprehenderit minima dolorem deleniti consequatur quas, alias quis. Quam quo harum inventore, hic rerum ab. Laudantium numquam inventore iste provident labore!",
-        image: "assets/banner.png",
+        image: "/src/assets/banner.png",
         tags: ["React Js"],
         postedDate: "posted 3 Jan",
       },
@@ -87,9 +87,8 @@ const MyProfile = () => {
     menuItems.map((item) => (
       <li
         key={item.id}
-        className={`slideProfileLinks cursor-pointer flex items-center px-4 py-2 hover:bg-gray-100 ${
-          activeTab === item.id ? "bg-gray-100" : ""
-        }`}
+        className={`slideProfileLinks cursor-pointer flex items-center px-4 py-2 hover:bg-gray-100 ${activeTab === item.id ? "bg-gray-100" : ""
+          }`}
         onClick={() => setActiveTab(item.id)}
       >
         <span>

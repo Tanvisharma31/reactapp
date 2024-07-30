@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Sample data
 const leaderboardData = [
@@ -55,7 +56,7 @@ const Leaderboard = () => {
           <div className="pull-left">
             <div className="dataTables_length">
               <label>
-                Show 
+                Show
                 <select
                   name="example_length"
                   value={entries}
@@ -124,13 +125,13 @@ const Leaderboard = () => {
             Showing 1 to {Math.min(entries, filteredData.length)} of {filteredData.length} entries
           </div>
           <div className="dataTables_paginate paging_simple_numbers" id="example_paginate">
-            <a className="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabIndex="0" id="example_previous">Previous</a>
+            <Link className="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabIndex="0" id="example_previous">Previous</Link>
             <span>
-              <a className="paginate_button current" aria-controls="example" data-dt-idx="1" tabIndex="0">1</a>
-              <a className="paginate_button" aria-controls="example" data-dt-idx="2" tabIndex="0">2</a>
-              <a className="paginate_button" aria-controls="example" data-dt-idx="3" tabIndex="0">3</a>
+              <Link className="paginate_button current" aria-controls="example" data-dt-idx="1" tabIndex="0">1</Link>
+              <Link className="paginate_button" aria-controls="example" data-dt-idx="2" tabIndex="0">2</Link>
+              <Link className="paginate_button" aria-controls="example" data-dt-idx="3" tabIndex="0">3</Link>
             </span>
-            <a className="paginate_button next" aria-controls="example" data-dt-idx="4" tabIndex="0" id="example_next">Next</a>
+            <Link className="paginate_button next" aria-controls="example" data-dt-idx="4" tabIndex="0" id="example_next">Next</Link>
           </div>
         </div>
       </div>

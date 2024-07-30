@@ -63,7 +63,7 @@ const NotificationItem = () => (
     <div className="top_holder flex items-center justify-between min-[900px]:px-4 py-2">
       <div className="image min-[900px]:w-[150px] mx-auto grid place-items-center">
         <img
-          src="assets/profile.png"
+          src="/src/assets/profile.png"
           alt="profile"
           className="w-10 h-10 rounded-full"
         />

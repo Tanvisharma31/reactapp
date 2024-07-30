@@ -55,7 +55,7 @@ const EditProfile = () => {
               <div className="upper__section flex max-[900px]:flex-col max-[900px]:items-center">
                 <div className="Profile_edit w-[250px] flex flex-col items-center min-[900px]:mr-8">
                   <label htmlFor="profile" className="mb-2">
-                    <img src="assets/profile.png" alt="" className="profile_image w-32 h-32 rounded-full object-cover" onError={(e) => e.currentTarget.src = 'assets/profile.png'} />
+                    <img src="/src/assets/profile.png" alt="" className="profile_image w-32 h-32 rounded-full object-cover" onError={(e) => e.currentTarget.src = 'assets/profile.png'} />
                   </label>
                   <input type="file" name="profile" id="profile" className="hidden" />
                   <div className="button_zone flex mt-2 flex-col">

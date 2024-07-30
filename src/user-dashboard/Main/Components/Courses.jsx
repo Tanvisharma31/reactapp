@@ -7,7 +7,7 @@ const courseCards = [
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
-    imageUrl: "assets/card_banner.svg",
+    imageUrl: "/src/assets/card_banner.svg",
     tab: "Browse",
   },
   {
@@ -15,7 +15,7 @@ const courseCards = [
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
-    imageUrl: "assets/card_banner.svg",
+    imageUrl: "/src/assets/card_banner.svg",
     tab: "Browse",
   },
   {
@@ -23,7 +23,7 @@ const courseCards = [
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
-    imageUrl: "assets/card_banner.svg",
+    imageUrl: "/src/assets/card_banner.svg",
     tab: "Browse",
   },
   {
@@ -31,7 +31,7 @@ const courseCards = [
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
-    imageUrl: "assets/card_banner.svg",
+    imageUrl: "/src/assets/card_banner.svg",
     tab: "Free",
   },
   {
@@ -39,7 +39,7 @@ const courseCards = [
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
-    imageUrl: "assets/advanced_react.svg",
+    imageUrl: "/src/assets/advanced_react.svg",
     tab: "Picks",
   },
   {
@@ -47,7 +47,7 @@ const courseCards = [
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
-    imageUrl: "assets/advanced_react.svg",
+    imageUrl: "/src/assets/advanced_react.svg",
     tab: "Access",
   },
   {
@@ -55,7 +55,7 @@ const courseCards = [
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
-    imageUrl: "assets/advanced_react.svg",
+    imageUrl: "/src/assets/advanced_react.svg",
     tab: "Picks",
   },
   {
@@ -63,7 +63,7 @@ const courseCards = [
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
-    imageUrl: "assets/advanced_react.svg",
+    imageUrl: "/src/assets/advanced_react.svg",
     tab: "Free",
   },
   {
@@ -71,7 +71,7 @@ const courseCards = [
     title: "Introduction to Machine Learning",
     provider: "Coursera",
     level: "Beginner",
-    imageUrl: "assets/ml_intro.svg",
+    imageUrl: "/src/assets/ml_intro.svg",
     tab: "News",
   },
   {
@@ -79,7 +79,7 @@ const courseCards = [
     title: "Introduction to Machine Learning",
     provider: "Coursera",
     level: "Beginner",
-    imageUrl: "assets/ml_intro.svg",
+    imageUrl: "/src/assets/ml_intro.svg",
     tab: "Free",
   },
   // Add more course objects here with appropriate tab values
@@ -127,7 +127,7 @@ const Courses = () => {
             </div>
             <div className="py-8 w-[40%] max-[900px]:w-[70%]">
               <img
-                src="assets/banner_img.svg"
+                src="/src/assets/banner_img.svg"
                 alt="banner_pic"
                 className="h-auto p-6"
               />
@@ -149,16 +149,15 @@ const Courses = () => {
             {["Browse", "Picks", "News", "Access", "Free"].map((tab) => (
               <li
                 key={tab}
-                className={`slideProfileLinks h-12 flex items-center px-2.5 text-base font-bold cursor-pointer ${
-                  activeTab === tab
+                className={`slideProfileLinks h-12 flex items-center px-2.5 text-base font-bold cursor-pointer ${activeTab === tab
                     ? "activeSlide text-[#ec1ee2] border-b-2 border-black border-solid"
                     : ""
-                }`}
+                  }`}
                 onClick={() => handleTabClick(tab)}
               >
                 <span className="grid place-items-center mr-2.5">
                   <img
-                    src="assets/bell.svg"
+                    src="/src/assets/bell.svg"
                     alt="icon"
                     className="w-4 h-4 object-contain"
                   />
@@ -179,31 +178,31 @@ const Courses = () => {
             .filter((course) => course.tab === "Browse")
             .map((course) => (
               <div
-              key={course.id}
-              className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
-            >
-              <div className="image w-full h-[150px]">
-                <img
-                  src={course.imageUrl}
-                  alt="card"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="course_body w-full p-5">
-                <div className="title flex flex-col items-start h-12">
-                  <span className="text-sm font-semibold text-pink-500">
-                    {course.provider}
-                  </span>
-                  <p className="text-base font-bold">{course.title}</p>
+                key={course.id}
+                className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
+              >
+                <div className="image w-full h-[150px]">
+                  <img
+                    src={course.imageUrl}
+                    alt="card"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="course_body w-full p-5">
+                  <div className="title flex flex-col items-start h-12">
+                    <span className="text-sm font-semibold text-pink-500">
+                      {course.provider}
+                    </span>
+                    <p className="text-base font-bold">{course.title}</p>
+                  </div>
+                </div>
+                <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
+                  <p className="text-base">{course.level}</p>
+                  <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
+                    Preview
+                  </button>
                 </div>
               </div>
-              <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
-                <p className="text-base">{course.level}</p>
-                <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
-                  Preview
-                </button>
-              </div>
-            </div>
             ))}
         </div>
       </div>
@@ -217,31 +216,31 @@ const Courses = () => {
             .filter((course) => course.tab === "Picks")
             .map((course) => (
               <div
-              key={course.id}
-              className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
-            >
-              <div className="image w-full h-[150px]">
-                <img
-                  src={course.imageUrl}
-                  alt="card"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="course_body w-full p-5">
-                <div className="title flex flex-col items-start h-12">
-                  <span className="text-sm font-semibold text-pink-500">
-                    {course.provider}
-                  </span>
-                  <p className="text-base font-bold">{course.title}</p>
+                key={course.id}
+                className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
+              >
+                <div className="image w-full h-[150px]">
+                  <img
+                    src={course.imageUrl}
+                    alt="card"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="course_body w-full p-5">
+                  <div className="title flex flex-col items-start h-12">
+                    <span className="text-sm font-semibold text-pink-500">
+                      {course.provider}
+                    </span>
+                    <p className="text-base font-bold">{course.title}</p>
+                  </div>
+                </div>
+                <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
+                  <p className="text-base">{course.level}</p>
+                  <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
+                    Preview
+                  </button>
                 </div>
               </div>
-              <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
-                <p className="text-base">{course.level}</p>
-                <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
-                  Preview
-                </button>
-              </div>
-            </div>
             ))}
         </div>
       </div>
@@ -255,31 +254,31 @@ const Courses = () => {
             .filter((course) => course.tab === "News")
             .map((course) => (
               <div
-              key={course.id}
-              className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
-            >
-              <div className="image w-full h-[150px]">
-                <img
-                  src={course.imageUrl}
-                  alt="card"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="course_body w-full p-5">
-                <div className="title flex flex-col items-start h-12">
-                  <span className="text-sm font-semibold text-pink-500">
-                    {course.provider}
-                  </span>
-                  <p className="text-base font-bold">{course.title}</p>
+                key={course.id}
+                className="course_card w-full max-w-xs min-h-[300px] bg-white shadow-lg flex flex-col justify-between items-start transition-all duration-500 ease-in-out rounded-md p-5 mb-5 mr-2 box-border hover:scale-[1.01] hover:shadow-2xl"
+              >
+                <div className="image w-full h-[150px]">
+                  <img
+                    src={course.imageUrl}
+                    alt="card"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="course_body w-full p-5">
+                  <div className="title flex flex-col items-start h-12">
+                    <span className="text-sm font-semibold text-pink-500">
+                      {course.provider}
+                    </span>
+                    <p className="text-base font-bold">{course.title}</p>
+                  </div>
+                </div>
+                <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
+                  <p className="text-base">{course.level}</p>
+                  <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
+                    Preview
+                  </button>
                 </div>
               </div>
-              <div className="course_footer w-[90%] mx-auto flex justify-between items-center">
-                <p className="text-base">{course.level}</p>
-                <button className="w-[40%] h-11 bg-white text-black font-bold py-2 px-4 border border-black rounded-md hover:bg-gray-100">
-                  Preview
-                </button>
-              </div>
-            </div>
             ))}
         </div>
       </div>

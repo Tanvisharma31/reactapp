@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 //import './AccountSetting.css';  Make sure to add your styles in this file
 
 const AccountSetting = () => {
@@ -20,46 +21,46 @@ const AccountSetting = () => {
           <div className="profile-tab-nav p-[1rem] min-[900px]:w-[250px] border border-black min-w-[250px]">
             <div className="p-4">
               <div className="img-circle hidden text-center mb-3">
-                <img src="assets/profile.png" alt="Profile" className="pic rounded-full h-24 w-24 border-4 border-white" />
+                <img src="/src/assets/profile.png" alt="Profile" className="pic rounded-full h-24 w-24 border-4 border-white" />
               </div>
               <h4 className="text-center account_setting_heading pb-0 text-xl">Account Settings</h4>
             </div>
             <div className="nav flex-col nav-pills" role="tablist" aria-orientation="vertical">
-              <a
+              <Link
                 className={`nav-link ${activeTab === 'account' ? 'active border-b border-gray-300 text-gray-800' : 'text-gray-800'} flex items-center px-2 py-3`}
                 onClick={() => handleTabChange('account')}
               >
                 <i className="fa fa-cart-plus text-center mr-3"></i>
                 Subscription
-              </a>
-              <a
+              </Link>
+              <Link
                 className={`nav-link ${activeTab === 'notification' ? 'active border-b border-gray-300 text-gray-800' : 'text-gray-800'} flex items-center px-2 py-3`}
                 onClick={() => handleTabChange('notification')}
               >
                 <i className="fa fa-bell text-center mr-3"></i>
                 Notification
-              </a>
-              <a
+              </Link>
+              <Link
                 className={`nav-link ${activeTab === 'password' ? 'active border-b border-gray-300 text-gray-800' : 'text-gray-800'} flex items-center px-2 py-3`}
                 onClick={() => handleTabChange('password')}
               >
                 <i className="fa fa-key text-center mr-3"></i>
                 Password
-              </a>
-              <a
+              </Link>
+              <Link
                 className={`nav-link ${activeTab === 'security' ? 'active border-b border-gray-300 text-gray-800' : 'text-gray-800'} flex items-center px-2 py-3`}
                 onClick={() => handleTabChange('security')}
               >
                 <i className="fa fa-history text-center mr-3"></i>
                 History
-              </a>
-              <a
+              </Link>
+              <Link
                 className={`nav-link ${activeTab === 'application' ? 'active border-b border-gray-300 text-gray-800' : 'text-gray-800'} flex items-center px-2 py-3`}
                 onClick={() => handleTabChange('application')}
               >
                 <i className="fa fa-trash text-center mr-3"></i>
                 Delete My Account
-              </a>
+              </Link>
             </div>
           </div>
           <div className="tab-content p-4 p-md-5 min-[900px]:w-[70%]">
