@@ -1,0 +1,23 @@
+.switch {
+  cursor: pointer;
+}
+
+.notificationTablinks.active {
+  border-bottom: 2px solid blue; /* Or any other active state styling */
+}
+
+.page_notifications_section {
+  display: none;
+}
+
+.page_notifications_section.block {
+  display: block;
+}
+
+.page_notification_item .popupHolder {
+  display: none; /* Or adjust based on your needs */
+}
+
+.page_notification_item:hover .popupHolder {
+  display: flex;
+}

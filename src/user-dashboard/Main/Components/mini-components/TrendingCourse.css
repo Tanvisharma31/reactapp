@@ -1,0 +1,11 @@
+
+
+/* Additional styling for Swiper */
+.swiper-button-next2,
+.swiper-button-prev2 {
+  color: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background: #cd27ff;
+}

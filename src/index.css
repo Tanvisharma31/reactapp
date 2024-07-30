@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the sidebar */
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+}
+
+.backdrop-blur {
+  display: block;
+  backdrop-filter: blur(1px);
+}
+
+.sidebar-content {
+  z-index: 20;
+}
+
+#course-outline {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#course-outline:hover {
+  border-color: #0400ff;
+  background-color: #e0e0ea;
+}
+
+#course-outline svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.lesson-button {
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.bar {
+  width: 60px;
+  height: 15px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.bar:hover {
+  background-color: lightblue;
+}
+
+.bar:visited {
+  background-color: #3b82f6;
+}
+
+.lesson-progress {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.coding {
+  margin-top: 60px;
+}
+
+.left-content {
+  overflow-y: scroll;
+  height: 100%;
+  width: 50%;
+}
+
+.feedback {
+  position: relative;
+}
+
+.btn-yes,
+.btn-no {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.right-content {
+  height: 100%;
+  width: 50%;
+}
+
+.left-content {
+  overflow-y: scroll;
+  height: 75vh;
+}
+
+@media (max-width: 800px) {
+  .left-content {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+}
+
+.hover-blue-500 {
+  border: 2px solid white;
+}
+.hover-blue-500:hover {
+  border: 2px solid #00ffd1bd;
+  background-color: #e4fffe;
+}
+.left-sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.right-sidebar {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 384px; /* 96rem */
+  height: 100%;
+  background-color: white;
+  z-index: 30;
+  overflow-y: auto;
+}
+
+.sidebar-open-left {
+  transform: translateX(0);
+}
+
+.sidebar-open-right {
+  transform: translateX(0);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 7px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #8b5cf6;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+.main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+}

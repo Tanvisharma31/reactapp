@@ -1,0 +1,40 @@
+.banner{
+    background: url("/src/assets/image\ 61.png");
+    background-position: center;
+    background-size: cover;
+    width: 1300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.teaching-list{
+    width:800px;
+    margin: 5px;
+    align-items: stretch;
+    align-content: stretch;
+    max-width: 100%;
+    width: 100%;
+}
+.teaching-list .list-container .teach-item .teach-item-container:hover {
+    box-shadow: 0 14.63px 80.44px -21.94px RGB(43 37 37 / 30%);
+}
+.teaching-list .list-container .teach-item .teach-item-container {
+    background-color: var(--c-white);
+    border: 1px solid var(--c-light-grey);
+    padding: 15px 20px 24px;
+    min-height: 146px;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.tr03 {
+    transition: all .3s;
+}
+.career_section{
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+.featured{
+    font-weight:700;
+font-size:40px;
+}

@@ -1,0 +1,135 @@
+/* Custom styles for the sidebar */
+.sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-open {
+    transform: translateX(0);
+}
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.backdrop-blur {
+    display: block;
+    backdrop-filter: blur(1px);
+    z-index: 10;
+}
+
+.sidebar-content {
+    z-index: 20;
+}
+
+.quiz {
+    overflow-y: auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+#course-outline {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D1D5DB;
+    /* Gray-300 */
+    padding: 0.5rem 1rem;
+    /* Adjust padding as needed */
+    transition: border-color 0.3s ease;
+}
+
+#course-outline:hover {
+    border-color: #0400ff;
+    background-color: #e0e0ea;
+    /* Green-500 */
+}
+
+#course-outline svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.lesson-button {
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bar {
+    width: 60px;
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: lightblue;
+}
+
+.bar:visited {
+    background-color: #3b82f6;
+}
+
+.lesson-progress {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.option:hover {
+
+    border-color: #81b1ff;
+    /* blue-500 */
+    color: #81b1ff;
+}
+
+.option {
+    border-color: #8e98aa;
+    /* blue-500 */
+    color: #8e98aa;
+    border: 2px solid;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.option.selected {
+    border-color: #3b82f6;
+    /* blue-500 */
+    color: #3b82f6;
+    /* blue-500 */
+}
+
+.hover-blue-500 {
+    border: 2px solid white;
+}
+
+.hover-blue-500:hover {
+    border: 2px solid #00ffd1bd;
+    background-color: #e4fffe;
+}

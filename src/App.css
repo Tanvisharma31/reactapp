@@ -1,0 +1,11 @@
+.notification_bell {
+  position: relative;
+}
+
+.checkhover:hover {
+  background-color: #d1d1d1;
+}
+
+.hover-blue-500:hover {
+  background-color: #E0F2FE;
+}
