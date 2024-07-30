@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar.jsx";
 import SettingBar from "./Settingbar.jsx";
 import Popup from "./Popup.jsx";
 import { Link } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const Navbar = () => {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8"
-                  src=""
+                  src="/src/assets/logo-black.png"
                   alt="Logo"
                 />
               </div>
@@ -103,7 +104,7 @@ const Navbar = () => {
                 >
                   <div className="">
                     <img
-                      src="/assets/bell.svg"
+                      src="/src/assets/bell.svg"
                       alt="notification"
                       className="notification_bell w-8 h-8 ml-1"
                       title="notification"

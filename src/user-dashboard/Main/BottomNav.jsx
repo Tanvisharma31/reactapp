@@ -3,9 +3,10 @@ import './Header.css'; // Assuming you have a CSS file for additional styles
 import { Link } from 'react-router-dom';
 import MyProgressSection from './Components/MyProgress.jsx';
 import MyFeed from './Components/MyFeed.jsx';
-import Courses from './Components/Courses.jsx';
+
 import MyProfile from './Components/MyProfile.jsx';
 import LiveEvents from './Components/LiveEvents.jsx';
+import Courses from './Components/Courses.jsx';
 
 function BottomBar({ setCurrentSection }) {
   return (

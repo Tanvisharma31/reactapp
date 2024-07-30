@@ -11,7 +11,7 @@ const courseCards = [
     tab: "Browse",
   },
   {
-    id: 1,
+    id: 2,
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
@@ -19,7 +19,7 @@ const courseCards = [
     tab: "Browse",
   },
   {
-    id: 1,
+    id: 3,
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
@@ -27,7 +27,7 @@ const courseCards = [
     tab: "Browse",
   },
   {
-    id: 1,
+    id: 4,
     title: "Unit testing Java Application",
     provider: "Educative",
     level: "Intermediate",
@@ -35,7 +35,7 @@ const courseCards = [
     tab: "Free",
   },
   {
-    id: 2,
+    id: 5,
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
@@ -43,7 +43,7 @@ const courseCards = [
     tab: "Picks",
   },
   {
-    id: 2,
+    id: 6,
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
@@ -51,7 +51,7 @@ const courseCards = [
     tab: "Access",
   },
   {
-    id: 2,
+    id: 7,
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
@@ -59,7 +59,7 @@ const courseCards = [
     tab: "Picks",
   },
   {
-    id: 2,
+    id: 8,
     title: "Advanced React Hooks",
     provider: "Udemy",
     level: "Advanced",
@@ -67,7 +67,7 @@ const courseCards = [
     tab: "Free",
   },
   {
-    id: 3,
+    id: 9,
     title: "Introduction to Machine Learning",
     provider: "Coursera",
     level: "Beginner",
@@ -75,7 +75,7 @@ const courseCards = [
     tab: "News",
   },
   {
-    id: 3,
+    id: 10,
     title: "Introduction to Machine Learning",
     provider: "Coursera",
     level: "Beginner",
@@ -85,7 +85,7 @@ const courseCards = [
   // Add more course objects here with appropriate tab values
 ];
 
-const Courses = () => {
+function Courses () {
   const [activeTab, setActiveTab] = useState("Browse");
 
   const handleTabClick = (tab) => {

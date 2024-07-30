@@ -27,7 +27,11 @@ const SettingBar = ({ isOpen, closeSettingBar }) => {
             </p>
           </div>
           <label className="switch">
-            <input type="checkbox" checked="" />
+            <input
+              type="checkbox"
+              id="setting-checkbox"
+              name="setting-checkbox"
+            />
             <span className="slider round"></span>
           </label>
         </div>
@@ -53,21 +57,33 @@ const SettingBar = ({ isOpen, closeSettingBar }) => {
           <div className="flex justify-between items-center">
             <p>Save course history</p>
             <label className="switch">
-              <input type="checkbox" checked="" />
+              <input
+                type="checkbox"
+                id="setting-checkbox"
+                name="setting-checkbox"
+              />
               <span className="slider round"></span>
             </label>
           </div>
           <div className="flex justify-between items-center">
             <p>Announcement Emails</p>
             <label className="switch">
-              <input type="checkbox" checked="" />
+              <input
+                type="checkbox"
+                id="setting-checkbox"
+                name="setting-checkbox"
+              />
               <span className="slider round"></span>
             </label>
           </div>
           <div className="flex justify-between items-center">
             <p>Reminders</p>
             <label className="switch">
-              <input type="checkbox" checked="" />
+              <input
+                type="checkbox"
+                id="setting-checkbox"
+                name="setting-checkbox"
+              />
               <span className="slider round"></span>
             </label>
           </div>
